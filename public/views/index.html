@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name=”format-detection” content=”telephone=no” />
+	<!--<script type="text/javascript" src="../js/controller/flexible.js"></script>-->
+	<title>2017-07-11开会代购项目</title>
+	<link rel="stylesheet" type="text/css" href="../styles/css/style.css">
+	<link rel="stylesheet/less" type="text/css" href="../styles/css/styles.less">
+	<link rel="stylesheet" href="../styles/css/swiper.min.css">
+</head>
+<body>
+<div class="swiper_box">
+	<div class="swiper-container">
+		<div class="swiper-wrapper" id="slide_ul">
+			<div class='swiper-slide'><a class='pic' href='javascript://'><img src="../images/111.jpg" alt=''/></a></div>
+			<div class='swiper-slide'><a class='pic' href='javascript://'><img src="../images/222.jpg" alt=''/></a></div>
+			<div class='swiper-slide'><a class='pic' href='javascript://'><img src="../images/333.jpg" alt=''/></a></div>
+		</div>
+		<div class="swiper-pagination swiper-pagination-white"></div>
+	</div>
+</div>
+
+<script src="../js/libs/less-1.7.0.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/libs/zepto.js"></script>
+<script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+<script type="text/javascript">
+  /*Home.prototype.loadingBanner = function(){
+    //轮播图部分
+    return new Promise((resolve, reject) => {
+        dingeTools.banner({})
+        .then((result) => {
+        var html = "";
+    if(result.status == 1 && result.data.length>0){
+      var data = result.data;
+      data.forEach((item) => {
+        html += "<div class='swiper-slide'><a class='pic' href='javascript://'><img src="+item.content+" alt=''/></a></div>";
+    });
+      $(html).appendTo($(".swiper-wrapper"));
+      new Swiper(".swiper-container",{
+        direction:"horizontal",//横向滑动
+        loop:true,//形成环路（即：可以从最后一张图跳转到第一张图
+        pagination:".swiper-pagination",//分页器
+        prevButton:".swiper-button-prev",//前进按钮
+        nextButton:".swiper-button-next",//后退按钮
+        autoplay:3000//每隔3秒自动播放
+
+      });
+      resolve();
+    }
+  }, (err) => {
+      reject(err);
+    });
+  });
+  };*/
+
+
+  var swiper = new Swiper(".swiper-container",{
+    direction:"horizontal",//横向滑动
+    loop:true,//形成环路（即：可以从最后一张图跳转到第一张图
+    pagination:".swiper-pagination",//分页器
+    prevButton:".swiper-button-prev",//前进按钮
+    nextButton:".swiper-button-next",//后退按钮
+    autoplay:3000//每隔3秒自动播放
+  });
+</script>
+
+
+
+<div class="header">你好</div>
+<div class="box">大家好</div>
+<div class="aaa">大家好aaaa</div>
+<div class="btn">点击</div>
+<span class="span">内容</span>
+</body>
+</html>
