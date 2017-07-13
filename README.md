@@ -3,7 +3,7 @@
     * 自己动手搭建express，调取自己的接口数据，作登录假数据判断
     * swiper.css swiper.js引入，轮播图
     * less函数式css运用，网址：http://www.bootcss.com/p/lesscss/
-    * flex在styles.less中用less封装了一下，css直接引用
+    * flex在styles.less中用less封装了一下，css直接引用，教程：http://web.jobbole.com/82766/，兼容教程：https://segmentfault.com/a/1190000003978624
     * 面向对象编程：face-project-edit-input.html，face-project-edit-textarea.html
 
 
