@@ -12,8 +12,9 @@
         <input type="button" value="提交" id="btn">
     </form>
     <script type="text/javascript" src="../js/libs/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="../js/api/api.js"></script>
     <script type="text/javascript">
-        $("#btn").click(function(){
+        /*$("#btn").click(function(){
             var name = $("#Name").val(),
                 password = $("#passWord").val();
 //            console.log(first_name);
@@ -27,7 +28,7 @@
               success:function(res){
                 if(res.success === 1){
 //                  console.log(res.data);
-                  window.location.href="http://127.0.0.1:8082/index.html";
+                  window.location.href="index.html";
                 }else{
                   alert(res.data);
                 }
@@ -36,6 +37,48 @@
                 console.log(e);
               }
             })
+        })*/
+
+
+        $("#btn").click(function(){
+          var name = $("#Name").val(),
+            password = $("#passWord").val();
+//            console.log(first_name);
+          new Api().api({
+            url:"login",
+            type:"POST",
+            data:{
+              name:name,
+              password:password
+            },
+            dataType:"JSON"
+          },function (res) {
+            if(res.success === 1){
+//                  console.log(res.data);
+              window.location.href="index.html";
+            }else{
+              alert(res.data);
+            }
+          });
+          /*$.ajax({
+            url:"login",
+            type:"POST",
+            data:{
+              name:name,
+              password:password
+            },
+            success:function(res){
+              if(res.success === 1){
+//                  console.log(res.data);
+                window.location.href="http://127.0.0.1:8082/index.html";
+              }else{
+                alert(res.data);
+              }
+            },
+            error:function(e){
+              console.log(e);
+            }
+          })*/
         })
     </script>
 </body>

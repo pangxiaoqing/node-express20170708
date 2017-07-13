@@ -1,8 +1,11 @@
 # node-express20170708
-* 自己动手搭建express，调取自己的接口数据，作登录假数据判断
-* swiper.css swiper.js引入，轮播图
-* less函数式css运用，网址：http://www.bootcss.com/p/lesscss/
-* 面向对象编程：face-project-edit-input.html，face-project-edit-textarea.html
+* 知识点：nodejs-express,swiper轮播图插件,less.css,flex布局,面向对象编程
+    * 自己动手搭建express，调取自己的接口数据，作登录假数据判断
+    * swiper.css swiper.js引入，轮播图
+    * less函数式css运用，网址：http://www.bootcss.com/p/lesscss/
+    * flex在styles.less中用less封装了一下，css直接引用
+    * 面向对象编程：face-project-edit-input.html，face-project-edit-textarea.html
+
 
 * 搭建：
 * 1.新建文件夹
